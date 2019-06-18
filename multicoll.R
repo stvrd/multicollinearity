@@ -30,7 +30,3 @@ x2 <- dcast(x2,X1~X2,value.var = "Y")[-1]
 # plot3d(x$X1,x$X2,x$Y)
 surface3d(xs,xs, as.matrix(x2), alpha=0.1)
 summary(m3)
-
-# Run this script multiple times and observe how the regression plane and the coefficients vary.
-# If X1 and X2 are strongly correlated, X2 becomes non significant, even tough it is strongly correlated to Y as well.
-# If the correlation between dependent variables is too strong, we run into numeric issues for least squares.
